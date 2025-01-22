@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Livewire\Users\ShowUsers;
+use App\Livewire\Cells\ShowCells;
 use App\Livewire\Cells\CreateCell;
 
 
@@ -16,6 +18,8 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-    Route::get('/cells', CreateCell::class)->name('cells');
+    Route::get('/users', ShowUsers::class)->name('users');
+    Route::get('/cells', ShowCells::class)->name('cells');
+    Route::get('/cells/create', CreateCell::class)->name('create-cells');
 });
 
