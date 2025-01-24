@@ -9,6 +9,13 @@
     "Already registered?": "Ya está registrado?",
     "Register": "Registrar",
 
-    "Dashboard":"Tablero",
-    "Users":"Usuarios"
+    "Dashboard": "Tablero",
+    "Users": "Usuarios",
+    "Create User": "Crear Usuario",
+
+    "Search": "Buscar",
+    "Show": "Ver",
+    "Edit": "Editar",
+    "Delete": "Borrar"
+
 }

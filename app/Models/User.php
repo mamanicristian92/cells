@@ -31,7 +31,7 @@ class User extends Authenticatable
         'email',
         'password',
         'user_type_id',
-        'doc_type',
+        'doc_type_id',
         'doc_number',
         'birthday',
         'address',
@@ -79,6 +79,11 @@ class User extends Authenticatable
     public function user_type(): BelongsTo
     {
         return $this->belongsTo(UserType::class);
+    }
+    
+    public function doc_type(): BelongsTo
+    {
+        return $this->belongsTo(DocumentType::class);
     }
 
     public function country(): BelongsTo

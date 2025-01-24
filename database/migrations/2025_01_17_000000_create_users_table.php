@@ -25,8 +25,8 @@ return new class extends Migration
             $table->string('profile_photo_path', 2048)->nullable();
             $table->timestamps();
             //persons columns
-            $table->foreignId('user_type_id');
-            $table->foreignId('doc_type')->nullable();
+            $table->foreignId('user_type_id')->nullable();
+            $table->foreignId('doc_type_id')->nullable();
             $table->bigInteger('doc_number')->nullable();
             $table->date('birthday')->nullable();
             $table->text('address')->nullable();
@@ -38,6 +38,7 @@ return new class extends Migration
             //constrains
             //$table->foreign('city_id')->references('id')->on('cities');
             $table->foreign('user_type_id')->references('id')->on('user_types');
+            $table->foreign('doc_type_id')->references('id')->on('document_types');
             $table->foreign('country_id')->references('id')->on('countries');
             $table->foreign('state_id')->references('id')->on('states');
         });

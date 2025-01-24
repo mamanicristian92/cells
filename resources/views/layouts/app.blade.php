@@ -18,7 +18,7 @@
         @livewireStyles
     </head>
     <body class="font-sans antialiased">
-        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+        {{-- <script src="../path/to/flowbite/dist/flowbite.min.js"></script> --}}
         <x-banner />
 
         <div class="min-h-screen bg-gray-100">
@@ -36,7 +36,6 @@
             <!-- Page Content -->
             @include('sidebar')
             <div class="p-4 sm:ml-64">
-            
             <main>
                 {{ $slot }}
             </main>
