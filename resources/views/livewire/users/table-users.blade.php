@@ -29,10 +29,10 @@
                         {{$user->name}}
                     </td>
                     <td class="px-6 py-4">
-                        {{$user->email}}
+                        {{-- {{$user->email}} --}}
                     </td>
                     <td class="px-6 py-4">
-                        {{$user->user_type->name}}
+                        {{-- {{$user->user_type->name?? ""}} --}}
                     </td>
                     <td class="px-0 py-0">
                         <div>

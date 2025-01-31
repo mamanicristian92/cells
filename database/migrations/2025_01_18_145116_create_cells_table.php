@@ -15,7 +15,11 @@ return new class extends Migration
             $table->id();
             $table->text('name');
             $table->foreignId('leader_id');
-            $table->text('address');
+            $table->text('neighborhood')->nullable();
+            $table->text('address')->nullable();
+            $table->char('gender',1)->nullable();  //m:male, f:female
+            $table->tinyInteger("day")->nullable(); //0:sunday, 1:monday, .., 6:saturday
+            $table->time("hour")->nullable();
             $table->foreignId('country_id')->nullable();
             $table->foreignId('state_id')->nullable();
             $table->text('city')->nullable();

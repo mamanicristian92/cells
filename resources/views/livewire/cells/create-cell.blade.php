@@ -1,4 +1,11 @@
 <div>
-    {{-- Success is as dangerous as failure. --}}
-    @include("livewire.cells.table-cell")
+    @include('livewire.cells.cell-form')
+    <button wire:click="store()"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-auto px-5 py-2.5 text-center">
+        Accept
+    </button>
+    <button wire:click="cancel()"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-auto px-5 py-2.5 text-center">
+        Cancel
+    </button>
 </div>

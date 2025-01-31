@@ -15,7 +15,9 @@ class ShowUsers extends Component
     {
         //$users = User::all();
         $users=User::where("name","like","%".$this->search."%");
-        return view('livewire.users.show-users',['users'=>$users->paginate(10)]);
+        return view('livewire.users.show-users',[
+            'users'=>$users->paginate(10)
+        ]);
     }
 
     public function create() {

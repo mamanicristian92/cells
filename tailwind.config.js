@@ -18,6 +18,7 @@ export default {
         "./resources/**/*.vue",
         
     ],
+    darkMode: 'selector',
 
     theme: {
         extend: {
