@@ -25,5 +25,6 @@ Route::middleware([
     Route::get('/users/edit/{user_id}', EditUser::class)->name('edit-user');
     Route::get('/cells', ShowCells::class)->name('cells');
     Route::get('/cells/create', CreateCell::class)->name('create-cell');
+    Route::get('/cells/edit/{cell_id}', EditUser::class)->name('edit-cell');
 });
 

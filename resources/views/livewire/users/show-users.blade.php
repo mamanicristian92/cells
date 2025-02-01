@@ -15,4 +15,7 @@
         </div>
     </div>
     @include('livewire.users.table-users')
+    <div class="p-4">
+        {{ $users->links() }}
+    </div>
 </div>

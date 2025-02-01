@@ -13,7 +13,7 @@ class ShowCells extends Component
 
     public $search="";
     public function mount() {
-
+        
     }
     public function render()
     {
@@ -30,10 +30,11 @@ class ShowCells extends Component
         ]);
     }
 
-    public function edit($id) {
-    }
-
+    
     public function create() {
-        return redirect('/cells/create');
+        return redirect()->route('create-cell');
+    }
+    public function edit($cell_id) {
+        return redirect('cells/edit/'.$cell_id);
     }
 }
